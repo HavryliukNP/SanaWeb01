@@ -13,17 +13,17 @@
         </tr>
         <tr>
             <td><label for="password">Пароль:</label></td>
-            <td><input type="password" id="password" name="password"></td>
+            <td><input type="password" id="password" name="password" required></td>
         </tr>
         <tr>
             <td><label for="confirm_password">Повторіть пароль:</label></td>
-            <td><input type="password" id="confirm_password" name="confirm_password"></td>
+            <td><input type="password" id="confirm_password" name="confirm_password" required></td>
         </tr>
         <tr>
             <td>Стать:</td>
             <td>
-                <input type="radio" id="male" name="gender" value="male"><label for="male">чоловік</label>
-                <input type="radio" id="female" name="gender" value="female"><label for="female">жінка</label>
+                <input type="radio" id="male" name="gender" value="male"><label for="male">Чоловік</label>
+                <input type="radio" id="female" name="gender" value="female"><label for="female">Жінка</label>
             </td>
         </tr>
         <tr>
@@ -45,7 +45,13 @@
                 <input type="checkbox" id="music" name="interests" value="music"><label for="music">Музика</label>
             </td>
         </tr>
-
+        <tr>
+            <td></td>
+            <td>
+                <input type="reset" value="Очистити">
+                <input type="submit" value="Відправити">
+            </td>
+        </tr>
     </table>
 </form>
 </body>
