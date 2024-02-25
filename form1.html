@@ -5,32 +5,29 @@
     <title>Форма реєстрації</title>
 </head>
 <body>
-<table>
-    <tr>
-        <td>
-            Логін:
-        </td>
-        <td>
-            <input type="text">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Пароль:
-        </td>
-        <td>
-            <input type="password">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Повторіть пароль:
-        </td>
-        <td>
-            <input type="password">
-        </td>
-    </tr>
+<form>
+    <table>
+        <tr>
+            <td><label for="login">Логін:</label></td>
+            <td><input type="text" id="login" name="login"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Пароль:</label></td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td><label for="confirm_password">Повторіть пароль:</label></td>
+            <td><input type="password" id="confirm_password" name="confirm_password"></td>
+        </tr>
+        <tr>
+            <td>Стать:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male"><label for="male">чоловік</label>
+                <input type="radio" id="female" name="gender" value="female"><label for="female">жінка</label>
+            </td>
+        </tr>
 
-</table>
+    </table>
+</form>
 </body>
 </html>
