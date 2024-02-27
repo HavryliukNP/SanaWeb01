@@ -57,6 +57,37 @@
             </tr>
         </table>
     </fieldset>
+    <fieldset>
+        <legend>Додаткові дані</legend>
+        <table>
+            <tr>
+                <td><label for="visit-frequency">Частота відвідування:</label></td>
+                <td>
+                    <input type="range" id="visit-frequency" name="visit-frequency" min="1" max="10" value="5">
+                    <output for="visit-frequency" id="visit-frequency-output">5</output>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="satisfaction">Рівень задоволення:</label></td>
+                <td>
+                    <meter id="satisfaction" name="satisfaction" min="0" max="100" low="25" high="75" value="50">50%</meter>
+                    <output for="satisfaction" id="satisfaction-output">50%</output>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="progress">Прогрес:</label></td>
+                <td>
+                    <progress id="progress" name="progress" value="50" max="100">50%</progress>
+                    <output for="progress" id="progress-output">50%</output>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Коментарі:</label></td>
+                <td><textarea id="comments" name="comments" placeholder="Введіть ваші коментарі" spellcheck="false"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+
 </form>
 </body>
 </html>
