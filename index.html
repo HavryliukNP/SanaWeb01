@@ -20,11 +20,28 @@
             </tr>
             <tr>
                 <td><label for="phone">Телефон:</label></td>
-                <td><input type="tel" id="phone" name="phone" placeholder="+380000000000"></td>
+                <td><input type="number" id="phone" name="phone" placeholder="0970000000" pattern="[0-9]{10}"></td>
             </tr>
             <tr>
                 <td><label for="birthdate">Дата народження:</label></td>
                 <td><input type="date" id="birthdate" name="birthdate" required></td>
+            </tr>
+            <tr>
+                <td><label for="color">Ваш улюблений колір:</label></td>
+                <td><input type="color" id="color" name="color"></td>
+            </tr>
+            <tr>
+                <td><label for="dish">Страва:</label></td>
+                <td>
+                    <input type="text" id="dish" name="dish" list="dishes" placeholder="Введіть страву">
+                    <datalist id="dishes">
+                        <option value="Піца">
+                        <option value="Спагеті">
+                        <option value="Стейк">
+                        <option value="Салат">
+                        <option value="Суп">
+                    </datalist>
+                </td>
             </tr>
             <tr>
                 <td><label for="favorite-food">Улюблена їжа:</label></td>
@@ -87,7 +104,16 @@
             </tr>
         </table>
     </fieldset>
-
+    <fieldset>
+        <legend>Завантаження файлів</legend>
+        <table>
+            <tr>
+                <td><label for="file-upload">Виберіть файл(-и):</label></td>
+                <td><input type="file" id="file-upload" name="file-upload" multiple></td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Надіслати">
 </form>
 </body>
 </html>
